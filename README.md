@@ -17,6 +17,18 @@ $ helm repo index --url https://pichuang.github.io/helloworld-repos .
 
 ![](/images/github-page.png)
 
+### (Optional) GitHub Packages Support
+```bash
+$ export USER=pichuang
+$ export TOKEN=ghp_pichuang_is_handsome_man
+$ echo "$TOKEN" | helm registry login -u $USER --password-stdin https://ghcr.io
+Login Succeeded
+
+$ helm push online-helmchart-0.1.0.tgz oci://ghcr.io/pichuang/helloworld-repos
+Pushed: ghcr.io/pichuang/helloworld-repos/online-helmchart:0.1.0
+Digest: sha256:db95f68f21ef82d7514c1ee427f68074e556178067bc459721a617c59e3e527b
+```
+
 
 ## For User
 
@@ -33,3 +45,5 @@ helloworld-repos/online-helmchart       0.1.0           1.16.0          A Helm c
 ## References
 - https://docs.bitnami.com/tutorials/create-your-first-helm-chart/
 - https://ithelp.ithome.com.tw/articles/10239692
+- https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token
+- https://docs.github.com/en/packages/working-with-a-github-packages-registry/working-with-the-container-registry
