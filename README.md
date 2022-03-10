@@ -45,9 +45,21 @@ NAME                                    CHART VERSION   APP VERSION     DESCRIPT
 helloworld-repos/online-helmchart       0.1.0           1.16.0          A Helm chart for Kubernetes
 ```
 
+### (Optional) Installing a Helm chart from ghcr.io or OCI Container Registry
+```bash
+$ helm pull oci://ghcr.io/pichuang/helloworld-repos/online-helmchart --version 0.1.0
+Pulled: ghcr.io/pichuang/helloworld-repos/online-helmchart:0.1.0
+Digest: sha256:db95f68f21ef82d7514c1ee427f68074e556178067bc459721a617c59e3e527b
+
+$ ls online-helmchart*
+online-helmchart-0.1.0.tgz
+```
+
+
 ## References
 - https://docs.bitnami.com/tutorials/create-your-first-helm-chart/
 - https://ithelp.ithome.com.tw/articles/10239692
 - https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token
 - https://docs.github.com/en/packages/working-with-a-github-packages-registry/working-with-the-container-registry
 - https://docs.aws.amazon.com/AmazonECR/latest/userguide/push-oci-artifact.html
+- https://docs.aws.amazon.com/AmazonECR/latest/userguide/ECR_on_EKS.html#using-helm-charts-eks
