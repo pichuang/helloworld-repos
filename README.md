@@ -50,3 +50,4 @@ helloworld-repos/online-helmchart       0.1.0           1.16.0          A Helm c
 - https://ithelp.ithome.com.tw/articles/10239692
 - https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token
 - https://docs.github.com/en/packages/working-with-a-github-packages-registry/working-with-the-container-registry
+- https://docs.aws.amazon.com/AmazonECR/latest/userguide/push-oci-artifact.html
