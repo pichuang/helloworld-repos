@@ -29,6 +29,9 @@ Pushed: ghcr.io/pichuang/helloworld-repos/online-helmchart:0.1.0
 Digest: sha256:db95f68f21ef82d7514c1ee427f68074e556178067bc459721a617c59e3e527b
 ```
 
+- Connect Package
+
+![](/images/github-package.png)
 
 ## For User
 
