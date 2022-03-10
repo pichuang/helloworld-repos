@@ -55,6 +55,23 @@ $ ls online-helmchart*
 online-helmchart-0.1.0.tgz
 ```
 
+## Appendix
+
+### List the contest of helm chart
+```bash
+$ tar -tvf online-helmchart-0.1.0.tgz
+-rw-r--r-- 0/0             131 2022-03-10 13:54 online-helmchart/Chart.yaml
+-rw-r--r-- 0/0            1883 2022-03-10 13:54 online-helmchart/values.yaml
+-rw-r--r-- 0/0            1783 2022-03-10 13:54 online-helmchart/templates/NOTES.txt
+-rw-r--r-- 0/0            1872 2022-03-10 13:54 online-helmchart/templates/_helpers.tpl
+-rw-r--r-- 0/0            1881 2022-03-10 13:54 online-helmchart/templates/deployment.yaml
+-rw-r--r-- 0/0             943 2022-03-10 13:54 online-helmchart/templates/hpa.yaml
+-rw-r--r-- 0/0            2097 2022-03-10 13:54 online-helmchart/templates/ingress.yaml
+-rw-r--r-- 0/0             388 2022-03-10 13:54 online-helmchart/templates/service.yaml
+-rw-r--r-- 0/0             338 2022-03-10 13:54 online-helmchart/templates/serviceaccount.yaml
+-rw-r--r-- 0/0             406 2022-03-10 13:54 online-helmchart/templates/tests/test-connection.yaml
+-rw-r--r-- 0/0             349 2022-03-10 13:54 online-helmchart/.helmignore
+```
 
 ## References
 - https://docs.bitnami.com/tutorials/create-your-first-helm-chart/
